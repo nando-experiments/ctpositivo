@@ -1,0 +1,296 @@
+@import url("http://fonts.googleapis.com/css?family=Lato:400,300,700");
+
+//
+// General
+//
+*,
+*:after,
+*:before {
+  @include box-sizing(border-box);
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  color: $text-color;
+  font-family: $font-family;
+  background: $bg-color url(/images/bg.png);
+  border-top: 3px solid $primary-color;
+  font-size: $base-font-size;
+  line-height: $base-line-height;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  line-height: 1.5;
+
+  small {
+    font-size: 65%;
+  }
+}
+
+h2, h4, h5, h6 {
+  font-weight: 800;
+}
+
+h1, h3 {
+  font-weight: 300;
+}
+
+//
+// # paragraphs
+//
+
+p {
+  margin: 0 0 15px;
+}
+
+a {
+  color: $link-color;
+  text-decoration: none;
+
+  &:hover {
+    color: lighten($link-color, 7%);
+    text-decoration: underline;
+  }
+}
+
+//
+// Container
+//
+.container {
+  @extend %clearfix;
+  max-width: em($grid-width);
+  padding: {
+    left: em(($grid-gutter-width / 2));
+    right: em(($grid-gutter-width / 2));
+  };
+  margin: {
+    left: auto;
+    right: auto;
+  };
+}
+
+//
+// simple grid system
+//
+
+// row
+//
+.row {
+  @extend %make-row;
+}
+
+// columns
+//
+.column {
+  @extend %column;
+}
+
+// columns
+//
+@for $i from 1 through $grid-columns {
+  .column-#{$i} {
+    @extend %column;
+    width: percentage($i/$grid-columns);
+  }
+}
+
+//
+// Header
+//
+.header {
+  @extend %clearfix;
+  min-height: em(110px);
+  @include box-shadow(0px 2px 4px rgba(#000, .2));
+
+  a, span {
+    @include transition(all .2s ease-in-out);
+  }
+
+  a {
+    text-decoration: none;
+    text-transform: uppercase;
+    padding: 15px 0;
+    display: inline-block;
+
+    &:hover {
+      color: $text-color;
+
+      span {
+        color: $primary-color;
+        border-color: $primary-color;
+      }
+    }
+  }
+
+  h1, h3 {
+    padding: 20px 0;
+    margin: 0;
+  }
+
+  h1 {
+    float: left;
+
+    span {
+      color: $text-color;
+      border: 3px solid $text-color;
+      margin: {
+        left: 10px;
+        right: 10px;
+      };
+      padding: {
+        right: 5px;
+        left: 5px;
+      }
+    }
+  }
+
+  h3 {
+    color: $text-color;
+    float: right;
+    text-align: right;
+    margin-top: 5px;
+
+    small {
+      font-weight: 300;
+      font-size: 1.4rem;
+    }
+
+    tel {
+      font-size: 3.2rem;
+    }
+
+    small, tel {
+      display: block;
+    }
+
+    span {
+      color: lighten($text-color, 10%);
+      font-weight: 300;
+      font-size: 60%;
+    }
+  }
+}
+
+//
+// Navbar
+//
+.navbar {
+  @extend %clearfix;
+  min-height: 60px;
+  background-color: $primary-color;
+  margin-bottom: 15px;
+}
+
+//
+// navbar
+.nav {
+  list-style: none;
+  margin-top: 0;
+  margin-bottom: 0;
+
+  li {
+    display: inline-block;
+    margin-right: 25px;
+  }
+
+  a {
+    color: #fff;
+    display: inline-block;
+    padding: 25px 10px;
+    border-top: 3px solid transparent;
+    font-weight: 300;
+    @include transition(all .2s ease-in-out);
+  }
+
+  li a:hover,
+  .active a {
+    color: $text-color;
+    text-decoration: none;
+    border-top-color: $text-color;
+  }
+}
+
+//
+// sidebar
+//
+.sidebar {
+}
+
+//
+// widget
+.widget {
+  background-color: #f9f9f9;
+  @include box-shadow(0px 2px 4px rgba(#000, .2));
+  padding: 20px;
+  margin-bottom: 20px;
+
+  h3 {
+    border-left: 3px solid $primary-color;
+    padding-left: 10px;
+    margin-top: 0;
+  }
+
+  img {
+    width: 50%;
+    display: inline-block;
+    padding-right: 5px;
+    border-radius: 50%;
+  }
+}
+
+//
+// Page title
+//
+.page-title {
+  border-bottom: 1px solid rgba($primary-color, .5);
+}
+
+//
+// contact
+//
+.contact-form {
+}
+
+.input {
+  padding: 6px 12px;
+  width: 100%;
+}
+
+.input-group {
+  margin-bottom: 10px;
+}
+
+.btn {
+  @include transition(all .2s ease-in-out);
+  border: 1px solid lighten($primary-color, 5%);
+  background-color: $primary-color;
+  color: $white-color;
+  font-weight: 300;
+  padding: 6px 12px;
+
+  &:hover,
+  &:focus {
+    border: 1px solid $primary-color;
+    background-color: darken($primary-color, 5%);
+  }
+}
+
+
+//
+// Footer
+//
+.footer {
+  min-height: 60px;
+  padding: 25px 0;
+  margin-top: 15px;
+  @extend %clearfix;
+  border-top: 1px solid $border-color;
+  text-align: center;
+
+  small {
+    color: #989898;
+  }
+}

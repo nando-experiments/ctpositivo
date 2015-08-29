@@ -1,0 +1,23 @@
+//
+// Sass Variables
+//
+
+$primary-color: #F06F52 !default;
+$link-color:    $primary-color !default;
+
+$black-color:  #000 !default;
+$silver-color: #ddd !default;
+$white-color:  #fff !default;
+
+$bg-color:     $white-color !default;
+$text-color:   lighten($black-color, 35%) !default;
+$border-color: $silver-color !default;
+$text-muted:   $silver-color !default;
+
+$font-family: "Lato", Helvetica, Arial, sans-serif !default;
+$base-font-size: 16px !default;
+$base-line-height: 1.4837 !default;
+
+$grid-width:        940px !default;
+$grid-gutter-width: 30px !default;
+$grid-columns:      12 !default;

@@ -1,0 +1,31 @@
+//
+// SASS Placeholders
+//
+
+%clearfix {
+  &:before,
+  &:after {
+    content: "";
+    display: table;
+  }
+  &:after {
+    clear: both;
+  }
+}
+
+%column {
+  float: left;
+  padding: {
+    left: ($grid-gutter-width / 2);
+    right: ($grid-gutter-width / 2);
+  };
+}
+
+%make-row {
+  @extend %clearfix;
+
+  margin: {
+    left:  em(ceil(($grid-gutter-width / -2)));
+    right: em(floor(($grid-gutter-width / -2)));
+  };
+}

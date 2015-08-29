@@ -1,0 +1,16 @@
+doctype html
+html(lang="pt-br")
+  head
+    block head
+    link(rel='stylesheet', href='/css/main.css')
+  body
+  
+    main#main
+    
+      include header.jade
+
+      include navbar.jade
+      
+      block content
+      
+      include footer.jade

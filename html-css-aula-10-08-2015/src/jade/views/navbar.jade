@@ -1,0 +1,14 @@
+block link
+  -var selected = 'home'; //default
+
+-var menu = { 'home': '/index.html', 'sobre': '/sobre.html', 'produtos': '/produtos.html', 'servicos': '/servicos.html', 'contato': '/contato.html' };
+
+nav.navbar
+  ul.nav.container
+    each val, key in menu
+      if selected === key
+        li.active
+          a(href=val, title=key)= key
+      else
+        li
+          a(href=val, title=key)= key

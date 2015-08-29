@@ -1,0 +1,11 @@
+//
+// Helpers class
+//
+
+.f-left { float: left; }
+.f-right { float: right; }
+.clearfix { @extend %clearfix; }
+
+.txt-center { text-align: center; }
+.txt-right { text-align: right; }
+.txt-left { text-align: left; }

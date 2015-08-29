@@ -1,2 +1,3 @@
-# ctpositivo
-aulas e exercícios do curso de sistemas para internet
+# CT Positivo
+
+Aulas e exercícios do curso de sistemas para internet

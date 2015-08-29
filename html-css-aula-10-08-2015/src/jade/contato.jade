@@ -1,0 +1,32 @@
+extends views/layout
+
+block head
+  title Contato
+
+block content
+
+  block link
+    -var selected = 'contato';
+
+  section.container
+    .row
+      .column-8
+        h1.page-title Contato
+        
+        p Are you so desperate to fight criminals that you lock yourself in to take them on one at a time ?
+        p You are in hell, little man. And I am the devil.
+        
+        form(name="contato", action="", method="post", class="contact-form")
+          .input-group
+            input(type="text", name="name", class="input", placeholder="Nome Completo")
+            
+          .input-group
+            input(type="email", name="email", class="input", placeholder="E-mail")
+            
+          .input-group
+            textarea(name="email", class="input", rows="5", placeholder="Mensagem..")
+            
+          .input-group
+            input(type="submit", value="Enviar", class="btn")
+            
+      include views/sidebar.jade
