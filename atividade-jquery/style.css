@@ -1,0 +1,80 @@
+body {
+  font: 12px Arial, sans-serif;
+}
+
+ul {
+  float: left;
+  margin: 0 30px 30px;
+  padding: 0;
+  width: 300px;
+}
+
+.hide {
+  opacity: 0;
+}
+.show {
+  opacity: 1;
+}
+
+li {
+  background: #eee;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#fdfdfd), to(#eee));
+  background-image: -webkit-linear-gradient(#fdfdfd, #eee);
+  background-image: -moz-linear-gradient(#fdfdfd, #eee);
+  background-image: -ms-linear-gradient(#fdfdfd, #eee);
+  background-image: -o-linear-gradient(#fdfdfd, #eee);
+  background-image: linear-gradient(#fdfdfd, #eee);
+  border: 1px solid #ccc;
+  border-top: 1px solid #eee;
+  color: #444;
+  cursor: pointer;
+  font-weight: bold;
+  list-style: none;
+  padding: 5px;
+  text-shadow: 0 1px 1px #fff;
+}
+
+li:hover {
+  border: 1px solid #999;
+  background: #eee;
+}
+
+.circulo {
+  background: #9a4545;
+  -webkit-border-radius: 100px;
+  -moz-border-radius: 100px;
+  border-radius: 100px;
+  height: 200px;
+  position: absolute;
+  right: 30px;
+  top: 230px;
+  width: 200px;
+}
+
+.conteudo {
+  background: #f0f0f0;
+  float: left;
+  margin: 0 30px 30px;
+  padding: 10px;
+}
+
+.quadrado {
+  background: #456f9a;
+  height: 150px;
+  position: absolute;
+  right: 10px;
+  top: 40px;
+  width: 150px;
+}
+
+.triangulo {
+  position: absolute;
+  right: 200px;
+  top: 20px;
+  width: 0;
+  height: 0;
+  border-left: 50px solid transparent;
+  border-right: 50px solid transparent;
+  border-bottom: 80px solid #7d9a45;
+  transition: .3s opacity linear;
+}
