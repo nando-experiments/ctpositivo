@@ -1,0 +1,66 @@
+body {
+  margin: 0;
+  padding: 0;
+  background: #961D46 url(images/img01.jpg) repeat;
+  font-family: 'Open Sans Condensed', sans-serif;
+  font-size: 16px;
+  color: #8A8985;
+}
+
+h1, h2, h3 {
+  margin: 0;
+  padding: 0;
+  text-transform: lowercase;
+  font-weight: normal;
+  color: #7D7764;
+}
+
+h1 {
+  font-size: 28px;
+
+  @include media($screen-desktop) {
+    font-size: 32px;
+  }
+}
+
+h2 {
+  font-size: 38px;
+
+  @include media($screen-desktop) {
+    font-size: 44px;
+  }
+}
+
+h3 {
+  font-size: 22px;
+
+  @include media($screen-desktop) {
+    font-size: 26px;
+  }
+}
+
+img {
+  display: block;
+}
+
+p, ul, ol {
+  margin-top: 0;
+  line-height: 180%;
+}
+
+ul, ol {}
+
+a {
+  text-decoration: none;
+  color: #CA4C44;
+
+  &:hover {}
+}
+
+// img responsive
+//
+img {
+  max-width: 100%;
+  vertical-align: middle;
+  height: auto;
+}

@@ -1,0 +1,15 @@
+
+/* Banner */
+
+#banner {
+  overflow: hidden;
+  padding-bottom: em($grid-spacing);
+
+  .image-style {
+    border: 15px solid #F4F4F4;
+  }
+
+  @include media($screen-desktop) {
+    padding-bottom: em($grid-spacing*2);
+  }
+}

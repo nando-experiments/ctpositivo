@@ -1,0 +1,22 @@
+
+/* Calendar */
+
+#calendar {}
+
+#calendar_wrap {
+  padding: 20px;
+}
+
+#calendar {
+  table {
+    width: 100%;
+  }
+
+  tbody td {
+    text-align: center;
+  }
+
+  #next {
+    text-align: right;
+  }
+}

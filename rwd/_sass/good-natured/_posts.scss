@@ -1,0 +1,38 @@
+
+.post {
+  overflow: hidden;
+
+  .title {
+    padding: 0px 0px 30px 0px;
+    letter-spacing: -3px;
+
+    a {
+      border: none;
+      text-transform: lowercase;
+      color: #7D7764;
+    }
+  }
+
+  .meta {
+    margin-bottom: 30px;
+    padding: 0px;
+    text-align: left;
+    font-size: 16px;
+
+    .date {
+      float: left;
+    }
+
+    .posted {
+      float: right;
+    }
+
+    a {}
+  }
+
+  .entry {
+    padding: 0px 0px 20px 0px;
+    padding-bottom: 20px;
+    text-align: justify;
+  }
+}

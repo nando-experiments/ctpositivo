@@ -1,0 +1,66 @@
+
+
+/* Header */
+
+// #header-wrapper {}
+
+#header {
+  // width: 960px;
+  @extend %container;
+  // height: 280px;
+  // margin: 0 auto;
+  // padding: 0 20px;
+  background: url(images/img01.jpg) no-repeat left top;
+}
+
+
+/* Logo */
+
+#logo {
+  @extend %column-left;
+  text-align: center;
+  margin: 0;
+  padding: 0;
+  color: #000;
+
+  @include media($screen-desktop) {
+    text-align: left;
+    width: 300px;
+  }
+
+  // h1, p {}
+
+  h1 {
+    padding: 60px 0px 0px 0px;
+    letter-spacing: -2px;
+    text-transform: lowercase;
+    font-size: 48px;
+
+    @include media($screen-desktop) {
+      font-size: 60px;
+    }
+  }
+
+  p {
+    margin-top: -5px;
+    padding: 0px 0px 0px 5px;
+    color: #fff;
+    font-size: 20px;
+
+    @include media($screen-desktop) {
+      font-size: 22px;
+    }
+
+    a {
+      color: #fff;
+      display: block;
+    }
+  }
+
+  a {
+    border: none;
+    background: none;
+    text-decoration: none;
+    color: #fff;
+  }
+}

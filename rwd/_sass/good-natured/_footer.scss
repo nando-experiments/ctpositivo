@@ -1,0 +1,45 @@
+/* Three Column Footer Content */
+
+#footer-content {
+  background: url(images/img04.png) no-repeat center top;
+  color: #E2B8C6;
+}
+
+#footer-bg {
+  overflow: hidden;
+  padding: 70px 0;
+}
+
+#footer-content h2 {
+  margin: 0;
+  padding: 0 0 20px 0;
+  letter-spacing: -2px;
+  text-shadow: 1px 2px 0 #861F40;
+  text-transform: lowercase;
+  font-size: 36px;
+  color: #FFFFFF;
+}
+
+/* Footer */
+
+#footer {
+  @extend %container-full;
+  min-height: em(100px);
+  background: url(images/img04.png) no-repeat center top;
+  padding: {
+    top: em(50px);
+    bottom: em(20px);
+  };
+
+  p {
+    margin: 0;
+    padding-top: 10px;
+    line-height: normal;
+    text-align: center;
+    color: #C76485;
+  }
+
+  a {
+    color: #C76485;
+  }
+}

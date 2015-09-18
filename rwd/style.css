@@ -3,15 +3,43 @@ Design by Free CSS Templates
 http://www.freecsstemplates.org
 Released for free under a Creative Commons Attribution 2.5 License
 */
+.container:before, #header:before, #wrapper:before, #footer:before, .container:after, #header:after, #wrapper:after, #footer:after { content: " "; display: table; }
+.container:after, #header:after, #wrapper:after, #footer:after { clear: both; }
+
+.container, #header, #wrapper, #footer { margin-left: auto; margin-right: auto; padding-left: 1.875em; padding-right: 1.875em; }
+
+@media screen and (min-width: 48em) { .container, #header { width: 720px; } }
+@media screen and (min-width: 71em) { .container, #header { width: 860px; } }
+@media screen and (min-width: 83em) { .container, #header { width: 1000px; } }
+
+@media (min-width: 71em) { #column1, #column2, #column3 { width: 320px; } }
+
+@media (min-width: 71em) { #content, #column1, #column2, #column3, #logo, #menu li { float: left; } }
+
+@media (min-width: 71em) { #menu, #menu ul, #sidebar { float: right; } }
+
+#wrapper { background-color: #FFFFFF; }
+
+/* Page */
+#page { padding: 30px 0 0; }
+
+/* Content */
+@media (min-width: 71em) { #content { padding-right: 40px; background: url(images/img05.jpg) no-repeat right 40px; width: 620px; } }
+
+@media (min-width: 71em) { #column1 { margin-left: 15px; } }
+
 body { margin: 0; padding: 0; background: #961D46 url(images/img01.jpg) repeat; font-family: 'Open Sans Condensed', sans-serif; font-size: 16px; color: #8A8985; }
 
 h1, h2, h3 { margin: 0; padding: 0; text-transform: lowercase; font-weight: normal; color: #7D7764; }
 
-h1 { font-size: 32px; }
+h1 { font-size: 28px; }
+@media (min-width: 71em) { h1 { font-size: 32px; } }
 
-h2 { font-size: 44px; }
+h2 { font-size: 38px; }
+@media (min-width: 71em) { h2 { font-size: 44px; } }
 
-h3 { font-size: 25px; }
+h3 { font-size: 22px; }
+@media (min-width: 71em) { h3 { font-size: 26px; } }
 
 img { display: block; }
 
@@ -19,83 +47,9 @@ p, ul, ol { margin-top: 0; line-height: 180%; }
 
 a { text-decoration: none; color: #CA4C44; }
 
-#wrapper { background-color: #FFFFFF; min-width: 1000px; }
-
-.container { width: 1000px; margin: 0px auto; }
-
-/* Header */
-#header { width: 960px; height: 280px; margin: 0 auto; padding: 0px 20px; background: url(images/img01.jpg) no-repeat left top; }
-
-/* Banner */
-#banner { overflow: hidden; height: 400px; }
-#banner .image-style { border: 15px solid #F4F4F4; }
-
-/* Logo */
-#logo { float: left; width: 300px; margin: 0; padding: 0; color: #000000; }
-#logo h1 { padding: 60px 0px 0px 0px; letter-spacing: -2px; text-transform: lowercase; font-size: 60px; }
-#logo p { margin-top: -10px; padding: 0px 0px 0px 5px; font-size: 22px; color: #FFFFFF; }
-#logo p a { color: #FFFFFF; display: block; }
-#logo a { border: none; background: none; text-decoration: none; color: #FFFFFF; }
-
-/* Splash */
-#splash { overflow: hidden; padding: 50px 0px; border-bottom: 1px dashed #E7E2DC; letter-spacing: -3px; text-align: center; font-size: 48px; }
-#splash span { color: #313131; }
-
-/* Menu */
-#menu { float: right; width: 500px; margin: 0 auto; padding: 0; }
-#menu ul { float: right; margin: 0; padding: 85px 0px 0px 0px; list-style: none; line-height: normal; }
-#menu li { float: left; }
-#menu a { display: block; margin-right: 1px; padding: 10px 0px 15px 30px; text-decoration: none; text-transform: lowercase; text-align: center; font-size: 20px; font-weight: 300; color: #CE92A6; border: none; }
-#menu a:hover { text-decoration: none; color: #FFFFFF; }
-#menu .current_page_item a { text-decoration: none; color: #FFFFFF; }
-#menu .current_page_item:first-child a { padding-left: 0; }
-
-/* Page */
-#page { padding: 30px 0px 0px 0px; }
-
-/* Content */
-#content { float: left; width: 620px; padding: 0px 40px 0px 0px; background: url(images/img05.jpg) no-repeat right 40px; }
-
-.post { overflow: hidden; }
-.post .title { padding: 0px 0px 30px 0px; letter-spacing: -3px; }
-.post .title a { border: none; text-transform: lowercase; color: #7D7764; }
-.post .meta { margin-bottom: 30px; padding: 0px; text-align: left; font-size: 16px; }
-.post .meta .date { float: left; }
-.post .meta .posted { float: right; }
-.post .entry { padding: 0px 0px 20px 0px; padding-bottom: 20px; text-align: justify; }
+img { max-width: 100%; vertical-align: middle; height: auto; }
 
 .links { padding-top: 20px; margin-bottom: 30px; }
-
-/* Sidebar */
-#sidebar { float: right; width: 320px; margin: 0px; padding: 0px 0px 0px 0px; color: #787878; }
-#sidebar h2 { padding: 0px 0px 30px 0px; letter-spacing: -3px; }
-#sidebar a { border: none; }
-#sidebar a:hover { text-decoration: underline; }
-
-/* Calendar */
-#calendar_wrap { padding: 20px; }
-
-#calendar table { width: 100%; }
-#calendar tbody td { text-align: center; }
-#calendar #next { text-align: right; }
-
-/* Three Column Footer Content */
-#footer-content { background: url(images/img04.png) no-repeat center top; color: #E2B8C6; }
-
-#footer-bg { overflow: hidden; padding: 70px 0px; }
-
-#footer-content h2 { margin: 0px; padding: 0px 0px 20px 0px; letter-spacing: -2px; text-shadow: 1px 2px 0px #861F40; text-transform: lowercase; font-size: 36px; color: #FFFFFF; }
-
-#column1 { float: left; width: 320px; margin-right: 20px; }
-
-#column2 { float: left; width: 320px; }
-
-#column3 { float: right; width: 320px; }
-
-/* Footer */
-#footer { height: 100px; margin: 0 auto; padding: 50px 0px 0px 0px; background: url(images/img04.png) no-repeat center top; }
-#footer p { margin: 0; padding-top: 10px; line-height: normal; text-align: center; color: #C76485; }
-#footer a { color: #C76485; }
 
 .box1 { overflow: hidden; height: 300px; background: url(images/img04.jpg) no-repeat center bottom; }
 
@@ -108,3 +62,80 @@ a { text-decoration: none; color: #CA4C44; }
 .list-style2 a { color: #E2B8C6; }
 .list-style2 a:hover { color: #C76485; }
 .list-style2 .first { padding-top: 0px; background: none; }
+
+/* Header */
+#header { background: url(images/img01.jpg) no-repeat left top; }
+
+/* Logo */
+#logo { text-align: center; margin: 0; padding: 0; color: #000; }
+@media (min-width: 71em) { #logo { text-align: left; width: 300px; } }
+#logo h1 { padding: 60px 0px 0px 0px; letter-spacing: -2px; text-transform: lowercase; font-size: 48px; }
+@media (min-width: 71em) { #logo h1 { font-size: 60px; } }
+#logo p { margin-top: -5px; padding: 0px 0px 0px 5px; color: #fff; font-size: 20px; }
+@media (min-width: 71em) { #logo p { font-size: 22px; } }
+#logo p a { color: #fff; display: block; }
+#logo a { border: none; background: none; text-decoration: none; color: #fff; }
+
+/* Banner */
+#banner { overflow: hidden; padding-bottom: 1.875em; }
+#banner .image-style { border: 15px solid #F4F4F4; }
+@media (min-width: 71em) { #banner { padding-bottom: 3.75em; } }
+
+/* Menu */
+.menu-button { background-color: transparent; position: absolute; top: 0.9375em; right: 0.9375em; z-index: 101; border: none; cursor: pointer; }
+@media (min-width: 48em) { .menu-button { display: none; } }
+
+.menu-icon { width: 40px; height: 4px; background-color: #fff; display: block; margin: 4px 0; }
+
+#menu { margin: 0 auto; padding: 0; -moz-transition: right 0.3s linear; -o-transition: right 0.3s linear; -webkit-transition: right 0.3s linear; transition: right 0.3s linear; }
+@media screen and (max-width: 48em) { #menu { z-index: 100; position: fixed; padding-top: 25px; top: 0; bottom: 0; right: -321px; width: 320px; background: #961D46 url(images/img01.jpg); } }
+#menu.open { right: 0; }
+@media (min-width: 71em) { #menu { width: 500px; background: none; } }
+#menu ul { list-style: none; line-height: normal; padding: 0; margin: 0; text-align: center; }
+@media (min-width: 71em) { #menu ul { padding: 85px 0 0 0; } }
+@media (min-width: 48em) { #menu li { display: inline-block; } }
+#menu a { display: inline-block; margin-right: 1px; text-decoration: none; text-transform: lowercase; text-align: center; font-size: 20px; font-weight: 300; color: #CE92A6; border: none; padding: 20px 15px; }
+@media (min-width: 71em) { #menu a { padding: 10px 0px 15px 30px; } }
+#menu a:hover { text-decoration: none; color: #fff; }
+#menu .current_page_item a { text-decoration: none; color: #fff; }
+#menu .current_page_item:first-child a { padding-left: 0; }
+
+.post { overflow: hidden; }
+.post .title { padding: 0px 0px 30px 0px; letter-spacing: -3px; }
+.post .title a { border: none; text-transform: lowercase; color: #7D7764; }
+.post .meta { margin-bottom: 30px; padding: 0px; text-align: left; font-size: 16px; }
+.post .meta .date { float: left; }
+.post .meta .posted { float: right; }
+.post .entry { padding: 0px 0px 20px 0px; padding-bottom: 20px; text-align: justify; }
+
+/* Sidebar */
+#sidebar { color: #787878; }
+@media (min-width: 71em) { #sidebar { width: 320px; margin: 0; padding: 0; } }
+#sidebar h2 { padding: 0 0 30px 0; letter-spacing: -3px; }
+#sidebar a { border: none; }
+#sidebar a:hover { text-decoration: underline; }
+
+/* Calendar */
+#calendar_wrap { padding: 20px; }
+
+#calendar table { width: 100%; }
+#calendar tbody td { text-align: center; }
+#calendar #next { text-align: right; }
+
+/* Splash */
+#splash { overflow: hidden; padding: 50px 0px; border-bottom: 1px dashed #E7E2DC; letter-spacing: -3px; text-align: center; font-size: 32px; }
+@media (min-width: 48em) { #splash { font-size: 38px; } }
+@media (min-width: 71em) { #splash { font-size: 48px; } }
+#splash span { color: #313131; }
+
+/* Three Column Footer Content */
+#footer-content { background: url(images/img04.png) no-repeat center top; color: #E2B8C6; }
+
+#footer-bg { overflow: hidden; padding: 70px 0; }
+
+#footer-content h2 { margin: 0; padding: 0 0 20px 0; letter-spacing: -2px; text-shadow: 1px 2px 0 #861F40; text-transform: lowercase; font-size: 36px; color: #FFFFFF; }
+
+/* Footer */
+#footer { min-height: 6.25em; background: url(images/img04.png) no-repeat center top; padding-top: 3.125em; padding-bottom: 1.25em; }
+#footer p { margin: 0; padding-top: 10px; line-height: normal; text-align: center; color: #C76485; }
+#footer a { color: #C76485; }

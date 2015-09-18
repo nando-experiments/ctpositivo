@@ -1,0 +1,22 @@
+/* Splash */
+
+#splash {
+  overflow: hidden;
+  padding: 50px 0px;
+  border-bottom: 1px dashed #E7E2DC;
+  letter-spacing: -3px;
+  text-align: center;
+  font-size: 32px;
+
+  @include media($screen-tablet) {
+    font-size: 38px;
+  }
+
+  @include media($screen-desktop) {
+    font-size: 48px;
+  }
+
+  span {
+    color: #313131;
+  }
+}

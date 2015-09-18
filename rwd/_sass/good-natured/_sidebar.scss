@@ -1,0 +1,25 @@
+/* Sidebar */
+
+#sidebar {
+  @extend %column-right;
+  color: #787878;
+
+  @include media($screen-desktop) {
+    width: 320px;
+    margin: 0;
+    padding: 0;
+  }
+
+  h2 {
+    padding: 0 0 30px 0;
+    letter-spacing: -3px;
+  }
+
+  a {
+    border: none;
+
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+}

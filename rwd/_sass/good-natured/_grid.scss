@@ -1,0 +1,43 @@
+//
+// Grid
+//
+
+#wrapper {
+  background-color: #FFFFFF;
+  @extend %container-full;
+}
+
+.container {
+  @extend %container;
+}
+
+/* Page */
+
+#page {
+  padding: $grid-spacing 0 0;
+}
+
+/* Content */
+
+#content {
+  @extend %column-left;
+
+  @include media($screen-desktop) {
+    padding-right: 40px;
+    background: url(images/img05.jpg) no-repeat right 40px;
+    width: 620px;
+  }
+}
+
+#column1,
+#column2,
+#column3 {
+  @extend %column-left;
+  @extend %column;
+}
+
+#column1 {
+  @include media($screen-desktop) {
+    margin-left: $grid-spacing / 2;
+  }
+}

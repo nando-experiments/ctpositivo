@@ -1,0 +1,56 @@
+%clearfix {
+  &:before,
+  &:after {
+    content: " ";
+    display: table;
+  }
+  &:after {
+    clear: both;
+  }
+}
+
+%container-full {
+  margin-left: auto;
+  margin-right: auto;
+  padding: {
+    left:  em($grid-spacing);
+    right: em($grid-spacing);
+  };
+
+  @extend %clearfix;
+}
+
+%container {
+  @extend %container-full;
+
+  @include media(min-width $screen-tablet) {
+    width: 720px;
+  }
+
+  @include media(min-width $screen-desktop) {
+    width: 860px;
+  }
+
+  @include media(min-width $screen-desktop-lg) {
+    width: 1000px;
+  }
+}
+
+%column {
+  @include media($screen-desktop) {
+    width: 320px;
+  // margin-right: 20px;
+  }
+}
+
+%column-left {
+  @include media($screen-desktop) {
+    float: left;
+  }
+}
+
+%column-right {
+  @include media($screen-desktop) {
+    float: right;
+  }
+}

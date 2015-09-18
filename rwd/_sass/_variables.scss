@@ -1,0 +1,15 @@
+//
+// Variables
+//
+
+$base-font-size: 16px !default;
+$grid-spacing: 30px !default;
+
+//
+// Breakpoints
+$default-feature:   min-width !default;
+$screen-phone:      23em !default; // Phone ~380px
+$screen-phone-lg:   30em !default; // Lage Phone ~480px
+$screen-tablet:     48em !default; // Tablet ~768px
+$screen-desktop:    71em !default; // Desktop ~1150px
+$screen-desktop-lg: 83em !default; // Large Desktop ~1330px
