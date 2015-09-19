@@ -4,15 +4,25 @@
   @extend %column-right;
   color: #787878;
 
-  @include media($screen-desktop) {
-    width: 320px;
+  @include media($screen-tablet) {
+    width: percentage(1/3);
     margin: 0;
+    padding-left: $grid-spacing;
+  }
+
+  @include media($screen-desktop-lg) {
+    width: 320px;
     padding: 0;
   }
 
   h2 {
-    padding: 0 0 30px 0;
+    text-align: center;
+    padding: 0 0 $grid-spacing;
     letter-spacing: -3px;
+
+    @include media($screen-tablet) {
+      text-align: left;
+    }
   }
 
   a {

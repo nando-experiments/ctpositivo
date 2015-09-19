@@ -22,9 +22,13 @@
 #content {
   @extend %column-left;
 
-  @include media($screen-desktop) {
+  @include media($screen-tablet) {
     padding-right: 40px;
     background: url(images/img05.jpg) no-repeat right 40px;
+    width: percentage(2/3);
+  }
+
+  @include media($screen-desktop-lg) {
     width: 620px;
   }
 }
@@ -37,7 +41,21 @@
 }
 
 #column1 {
-  @include media($screen-desktop) {
-    margin-left: $grid-spacing / 2;
+  @include media($screen-tablet) {
+    padding-right: $grid-spacing / 2;
+  }
+}
+
+
+#column2 {
+  @include media($screen-tablet) {
+    padding-right: $grid-spacing / 2;
+    padding-left: $grid-spacing / 2;
+  }
+}
+
+#column3 {
+  @include media($screen-tablet) {
+    padding-left: $grid-spacing / 2;
   }
 }

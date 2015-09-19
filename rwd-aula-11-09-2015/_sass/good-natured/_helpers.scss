@@ -13,6 +13,7 @@
   margin: 0px;
   padding: 0px;
   list-style: none;
+  text-align: center;
 
   li {
     padding: 7px 0px 7px 0px;
@@ -23,12 +24,17 @@
     padding-top: 0px;
     border-top: none;
   }
+
+  @include media($screen-tablet) {
+    text-align: left;
+  }
 }
 
 .list-style2 {
   margin: 0px;
   padding: 0px;
   list-style: none;
+  text-align: center;
 
   li {
     padding: 7px 0px 7px 0px;
@@ -46,5 +52,9 @@
   .first {
     padding-top: 0px;
     background: none;
+  }
+
+  @include media($screen-tablet) {
+    text-align: left;
   }
 }

@@ -15,18 +15,20 @@
 }
 
 .menu-icon {
-  width: 40px;
-  height: 4px;
+  width: 30px;
+  height: 3px;
   background-color: #fff;
   display: block;
   margin: 4px 0;
 }
 
+$menu-width: 320px;
+
 #menu {
   @extend %column-right;
   margin: 0 auto;
   padding: 0;
-  @include transition(right .3s linear);
+  @include transition(right .1s linear);
 
   @include media(max-width $screen-tablet) {
     z-index: 100;
@@ -34,10 +36,14 @@
     padding-top: 25px;
     top: 0;
     bottom: 0;
-    right: -321px;
-    width: 320px;
+    right: -($menu-width + 1);
+    width: $menu-width;
     background: #961D46 url(images/img01.jpg);
+  }
 
+  @include media(max-width $screen-phone) {
+    right: -101%;
+    width: 100%;
   }
 
   &.open {

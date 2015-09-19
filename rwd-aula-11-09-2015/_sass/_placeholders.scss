@@ -22,35 +22,35 @@
 
 %container {
   @extend %container-full;
+  padding: 0;
 
   @include media(min-width $screen-tablet) {
-    width: 720px;
+    width: $tablet-width;
   }
 
   @include media(min-width $screen-desktop) {
-    width: 860px;
+    width: $desktop-width;
   }
 
   @include media(min-width $screen-desktop-lg) {
-    width: 1000px;
+    width: $desktop-lg-width;
   }
 }
 
 %column {
-  @include media($screen-desktop) {
-    width: 320px;
-  // margin-right: 20px;
+  @include media($screen-tablet) {
+    width: percentage(1/3);
   }
 }
 
 %column-left {
-  @include media($screen-desktop) {
+  @include media($screen-tablet) {
     float: left;
   }
 }
 
 %column-right {
-  @include media($screen-desktop) {
+  @include media($screen-tablet) {
     float: right;
   }
 }
