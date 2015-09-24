@@ -2,3 +2,4 @@
 node_modules
 dist
 bower_components
+!projeto-final-web/agencia-fercom/dist/
