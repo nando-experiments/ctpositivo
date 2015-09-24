@@ -2,7 +2,16 @@
 // Mixins
 //
 
-$default-feature: max-width;
+//
+// mixin font-size
+@mixin font-size($px) {
+  $pxValue: strip-unit($px);
+  $remValue: $pxValue / 16;
+  font-size: $remValue + rem;
+}
+
+//
+// mixin for media queries
 @mixin media($query: $feature $value) {
   @if length($query) == 1 {
     @media screen and ($default-feature: nth($query, 1)) {

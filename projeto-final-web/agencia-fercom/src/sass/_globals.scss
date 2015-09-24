@@ -1,3 +1,70 @@
 
+// Google webfonts
+//
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:400,300,700);
+// @import url(//fonts.googleapis.com/css?family=Droid+Sans:400,700);
+@import url(//fonts.googleapis.com/css?family=Droid+Serif:400,700);
+
+*,
+*:after,
+*:before {
+  @include box-sizing(border-box);
+}
+
+html,
 body {
+  height: 100%;
+}
+
+body {
+  font-family: $family-base;
+  font-size: $font-size-base;
+  line-height: $line-height-base;
+}
+
+p {
+  margin: 0 0 .9em;
+}
+
+.lead {
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+  @include font-size($font-size-base + 3);
+  color: rgba($silver-color, .7);
+}
+
+h1, .h1
+h2, .h2
+h3, .h3
+h4, .h4
+h5, .h5
+h6, .h6 {
+  font-family: $family-serif;
+  font-weight: $font-weight-bold;
+}
+
+h1,
+.h1 {
+  @include font-size($font-size-base + 20);
+}
+
+h2,
+.h2 {
+  @include font-size($font-size-base + 16);
+}
+
+h3,
+.h3 {
+  @include font-size($font-size-base + 10);
+}
+
+h4,
+.h4 {
+  @include font-size($font-size-base + 6);
+}
+
+h5, .h5
+h6, .h6 {
+  @include font-size($font-size-base + 4);
 }

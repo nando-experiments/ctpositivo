@@ -1,0 +1,146 @@
+//
+//
+
+$nav-width: 240px !default;
+
+.header {
+  position: absolute;
+  z-index: 1000;
+  width: 100%;
+  right: 0;
+  left: 0;
+  top: 0;
+}
+
+.logo {
+  @include font-size($font-size-base + 12);
+  font-family: $family-base;
+  font-weight: $font-weight-light;
+  letter-spacing: -0.06em;
+  margin: $grid-gutter-width 0 0 $grid-gutter-width;
+  padding: 0;
+
+  @include media($screen-desktop) {
+    margin: 1em 0 0;
+    float: left;
+  }
+
+  a {
+    color: #fff;
+
+    &,
+    &:hover {
+      text-decoration: none;
+    }
+
+    span {
+      color: $primary-color;
+    }
+  }
+}
+
+.nav-menu {
+  background-color: transparent;
+  background: none;
+  border: none;
+  padding: 0;
+  position: absolute;
+  top: $grid-gutter-width + 10;
+  right: $grid-gutter-width;
+  z-index: 101;
+
+  span {
+    display: block;
+    width: 40px;
+    height: 3px;
+    background-color: $white-color;
+    margin-bottom: 5px;
+  }
+
+  @include media($screen-desktop) {
+    display: none;
+  }
+}
+
+.navbar {
+  position: fixed;
+  top: 0;
+  right: -($nav-width + 1);
+  bottom: 0;
+  width: $nav-width;
+  background-color: rgba($black-color, .95);
+  z-index: 100;
+
+  ul {
+    list-style: none;
+    padding: 60px 0 0;
+    margin: 2em 0 0;
+    text-align: center;
+
+    @include media($screen-desktop) {
+      padding: 0;
+      float: right;
+      text-align: left;
+    }
+  }
+
+  li {
+    display: block;
+    letter-spacing: -0.06em;
+    position: relative;
+    text-transform: uppercase;
+    margin: 0 0 0 .5em;
+    padding: 0;
+
+    &:before {
+      content: '';
+      position: absolute;
+      width: 80px;
+      left: 50%;
+      bottom: 0;
+      height: 1px;
+      margin-left: -40px;
+      background-color: rgba($primary-color, .9);
+    }
+
+    @include media($screen-desktop) {
+      margin: 0 0 0 .5em;
+      display: inline-block;
+
+      &:before {
+        display: none;
+      }
+    }
+  }
+
+  a {
+    display: block;
+    padding: 1em;
+    color: $white-color;
+    @include transition(opacity .2s linear);
+
+    @include media($screen-desktop) {
+      padding: 5px 12px;
+    }
+
+    &,
+    &:hover {
+      text-decoration: none;
+    }
+
+    &:hover,
+    &:focus {
+      @include opacity(.7);
+    }
+  }
+
+  @include media($screen-desktop) {
+    background-color: transparent;
+    position: relative;
+    display: block;
+    right: auto;
+    top: auto;
+    width: auto;
+    bottom: auto;
+  }
+}

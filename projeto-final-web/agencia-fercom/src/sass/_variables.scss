@@ -3,3 +3,32 @@
 //
 
 $primary-color: #F06F52 !default;
+$black-color: #000 !default;
+$silver-color: #eee !default;
+$white-color: #fff !default;
+
+$family-base: 'Open Sans', Helvetica, Arial, sans-serif !default;
+$family-serif: 'Droid Serif', Georgia, serif !default;
+
+$font-size-base: 18px !default;
+$line-height-base: 1.4 !default;
+
+$font-weight-light: 300 !default;
+$font-weight-normal: 400 !default;
+$font-weight-bold: 700 !default;
+$font-weight-bolder: 900 !default;
+
+// Grid gutter and columns
+//
+$grid-gutter-width: 30px !default;
+$grid-columns:      12 !default;
+$grid-spacing:      ($grid-gutter-width / 2) !default;
+
+// Breakpoints
+//
+$default-feature:   min-width !default;
+$screen-phone:      23em !default; // Phone ~380px
+$screen-lg-phone:   30em !default; // Lage Phone = ~480px
+$screen-tablet:     48em !default; // Tablet ~768px
+$screen-desktop:    71em !default; // Desktop ~1150px
+$screen-lg-desktop: 83em !default; // Large Desktop ~1330px

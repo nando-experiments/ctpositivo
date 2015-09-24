@@ -10,10 +10,8 @@ html(lang='pt-br', class='no-js')
     link(rel='stylesheet', href='/assets/css/main.css')
   body
 
-    main
+    include ../views/header.jade
 
-      include ../views/header.jade
+    block content
 
-      block content
-
-      include ../views/footer.jade
+    include ../views/footer.jade

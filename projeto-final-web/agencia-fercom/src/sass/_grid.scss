@@ -2,8 +2,29 @@
 // Grid
 //
 
+.container-full {
+  padding: {
+    left: $grid-gutter-width / 2;
+    right: $grid-gutter-width / 2;
+  };
+  margin : {
+    left: auto;
+    right: auto;
+  };
+}
+
 .container {
-  width: 800px;
-  margin-left: auto;
-  margin-right: auto;
+  @extend .container-full;
+
+  @include media($screen-tablet) {
+    width: 90%;
+  }
+
+  @include media($screen-desktop) {
+    width: 960px;
+  }
+
+  @include media($screen-lg-desktop) {
+    width: 1200px;
+  }
 }

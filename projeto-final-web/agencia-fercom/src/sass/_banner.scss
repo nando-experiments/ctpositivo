@@ -1,0 +1,93 @@
+//
+// Banner
+//
+
+
+.banner {
+  background: url("/assets/images/banner.jpg") no-repeat top center;
+  @include background-size(cover);
+  position: relative;
+  display: table;
+  text-align: center;
+
+  &, .banner-inner {
+    overflow: hidden;
+    width: 100%;
+    min-height: 420px;
+
+    @include media($screen-desktop) {
+      height: 100%;
+    }
+  }
+
+  h1 {
+    text-transform: uppercase;
+    color: $white-color;
+    @include font-size($font-size-base + 4);
+
+    @include media($screen-tablet) {
+      @include font-size($font-size-base + 20);
+    }
+
+    @include media($screen-lg-desktop) {
+      @include font-size($font-size-base + 44);
+    }
+  }
+
+  .lead {
+    display: none;
+
+    @include media($screen-tablet) {
+      display: block;
+    }
+  }
+
+  span.divider {
+    display: block;
+    margin: 2em auto;
+    background-color: $primary-color;
+    height: 3px;
+    width: 70px;
+  }
+
+  .banner-content {
+    width: 100%;
+    padding: 120px 20px 60px;
+
+    @include media($screen-desktop) {
+      padding: 0 50px;
+      top: 50%;
+      position: absolute;
+      -webkit-transform: translateY(-50%);
+      -ms-transform: translateY(-50%);
+      transform: translateY(-50%);
+    }
+  }
+
+  .button {
+    text-transform: uppercase;
+    font-weight: $font-weight-bold;
+    margin-top: 5px;
+
+    @include media($screen-tablet) {
+      margin-top: 7%;
+    }
+
+    span {
+      display: none;
+
+      @include media($screen-tablet) {
+        display: inline-block;
+      }
+    }
+  }
+}
+
+.banner-inner {
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  background-color: rgba($black-color, .8);
+}

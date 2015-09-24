@@ -1,3 +1,18 @@
 //
 // Helpers class
 //
+
+.pull-left { float: left !important; }
+.pull-right { float: right !important; }
+
+.txt-white { color: $white-color !important; }
+.txt-black { color: $black-color !important; }
+.txt-center { text-align: center !important; }
+
+.fw-light { font-weight: $font-weight-light !important; }
+.fw-normal { font-weight: $font-weight-normal !important; }
+.fw-bold { font-weight: $font-weight-bold !important; }
+
+.p-fixed { position: fixed !important; }
+.p-relative { position: relative !important; }
+.p-absolute { position: absolute !important; }
