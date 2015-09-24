@@ -1,0 +1,95 @@
+//
+// My styles
+//
+
+body {
+  font-family: 'Open Sans', Helvetica, Arial, sans-serif;
+  color: #676767;
+}
+
+.main-container {
+  @extend .container-fluid;
+  max-width: 76em;
+}
+
+.navbar-default {
+  margin-bottom: 0;
+}
+
+.main-header {
+  min-height: 110px;
+}
+
+.logo {
+  float: left;
+  padding: 15px 0;
+
+  a {
+    &:hover,
+    &:focus {
+      text-decoration: none;
+    }
+  }
+}
+
+.search-top {
+  padding-top: 35px;
+}
+
+.banner {
+  background-color: #e7e7e7;
+  padding: $grid-gutter-width 0;
+  margin-bottom: ($grid-gutter-width*3);
+}
+
+.feature {
+  padding :{
+    bottom: 40px;
+    top: 40px;
+  }
+  margin-bottom: 60px;
+  @extend .clearfix;
+
+  h1 {
+    margin-top: 0;
+  }
+}
+
+.bg-gray {
+  background-color: #f2f3f4;
+}
+
+.card {
+  @extend .clearfix;
+  @include box-shadow(0px 2px 3px rgba(#000, .2));
+  @include transition(background .2s linear);
+  padding: 25px;
+
+  h3 {
+    font-size: 2.6rem;
+  }
+
+  &:hover,
+  &:focus {
+    background-color: #efefef;
+  }
+}
+
+a.card {
+  display: block;
+
+  &:hover,
+  &:focus {
+    text-decoration: none;
+  }
+}
+
+footer {
+  @extend .clearfix;
+  border-top: 1px solid #efefef;
+  margin-top: 60px;
+  padding: {
+    top: 30px;
+    bottom: 30px;
+  };
+}

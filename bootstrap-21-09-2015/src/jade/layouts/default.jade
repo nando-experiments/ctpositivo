@@ -1,0 +1,19 @@
+doctype html
+html(lang="pt-br")
+  head
+    block head
+    link(href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,600', rel='stylesheet', type='text/css')
+    link(rel='stylesheet', href='/assets/css/main.css')
+  body
+
+    main#main
+
+      include ../views/header.jade
+
+      include ../views/navbar.jade
+
+      include ../views/banner.jade
+
+      block content
+
+      include ../views/footer.jade

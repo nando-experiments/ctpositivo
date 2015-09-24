@@ -1,0 +1,15 @@
+{
+  "filename": "src/sass/",
+  "jade": "src/jade/",
+  "sass": "src/sass/",
+  "js": "src/js/",
+  "img": "src/images/",
+  "fonts": "src/fonts/",
+  "dist": "dist/",
+  "dest": {
+    "css": "dist/assets/css/",
+    "js": "dist/assets/js/",
+    "img": "dist/assets/images/",
+    "fonts": "dist/assets/fonts/"
+  }
+}
