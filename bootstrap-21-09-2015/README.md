@@ -1,3 +1,1 @@
-# init SASS Bootstrap
-
-De o start no seu projeto usando o SASS do Bootstrap 3
+# Trabalho de Bootstrap - 21-09-2015
