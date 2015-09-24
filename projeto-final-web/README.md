@@ -10,4 +10,4 @@ Apresentação dia 28/09.
 
 ### Versão inicial - Mobile first
 
-![](projeto-final-web/vesao-inicial.png)
+![](versao-inicial.png)
