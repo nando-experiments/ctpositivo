@@ -1,0 +1,26 @@
+{
+  "name": "agencia-fercom",
+  "version": "1.0.0",
+  "homepage": "https://github.com/nandomoreirame/ctpositivo",
+  "authors": [
+    "Fernando Moreira <nandomoreira.me@gmail.com>"
+  ],
+  "description": "Projeto Final da aula de Programação para Web",
+  "moduleType": [
+    "node"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "devDependencies": {
+    "jquery": "~2.1.4",
+    "jquery-migrate": "~1.2.1",
+    "modernizr": "~3.0.0",
+    "wow": "~1.1.2"
+  }
+}
