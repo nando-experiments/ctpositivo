@@ -7,3 +7,7 @@ Desenvolver em HTML e CSS um site seguindo o wireframe em anexo. O tema é livre
 Siga as normas e padrões W3C, com código limpo e indentado, seguindo orientações das aulas. Não serão aceitos temas prontos ou temas modificados. O aluno deve desenvolver um projeto completo.
 
 Apresentação dia 28/09.
+
+### Verão inicial - Mobile first
+
+![](versao-inicial.png)
