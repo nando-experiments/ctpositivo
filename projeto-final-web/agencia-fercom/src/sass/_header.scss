@@ -17,6 +17,20 @@ $nav-width: 240px !default;
       right: $grid-gutter-width;
     };
   }
+
+  a {
+    @include transition(opacity .2s linear);
+
+    &,
+    &:hover {
+      text-decoration: none;
+    }
+
+    &:hover,
+    &:focus {
+      @include opacity(.7);
+    }
+  }
 }
 
 .logo {
@@ -125,21 +139,11 @@ $nav-width: 240px !default;
     display: block;
     padding: 1em;
     color: $white-color;
-    @include transition(opacity .2s linear);
 
     @include media($screen-desktop) {
       padding: 5px 12px;
     }
 
-    &,
-    &:hover {
-      text-decoration: none;
-    }
-
-    &:hover,
-    &:focus {
-      @include opacity(.7);
-    }
   }
 
   @include media($screen-desktop) {

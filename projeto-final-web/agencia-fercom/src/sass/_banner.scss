@@ -30,14 +30,17 @@
     }
 
     @include media($screen-lg-desktop) {
-      @include font-size($font-size-base + 44);
+      @include font-size($font-size-base + 28);
+      width: 80%;
+      margin-left: auto;
+      margin-right: auto;
     }
   }
 
   .lead {
     display: none;
 
-    @include media($screen-tablet) {
+    @include media($screen-desktop) {
       display: block;
     }
   }
@@ -69,8 +72,8 @@
     font-weight: $font-weight-bold;
     margin-top: 5px;
 
-    @include media($screen-tablet) {
-      margin-top: 7%;
+    @include media($screen-desktop) {
+      margin-top: 0;
     }
 
     span {

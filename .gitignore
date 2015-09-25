@@ -1,5 +1,6 @@
 .sass-cache
 node_modules
 dist
+bower
 bower_components
 !projeto-final-web/agencia-fercom/dist/
