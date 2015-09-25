@@ -43,3 +43,46 @@
     }
   }
 }
+
+//
+// # mixin for grid system
+//
+
+// the columns
+@mixin make-grid($screen: '-', $columns: $grid-columns) {
+  @for $i from 1 through $columns {
+    .col#{$screen}#{$i} {
+      width: (100% / $columns * $i);
+    }
+  }
+}
+
+// Columns pull
+//
+@mixin make-grid-pull($screen: '-', $columns: $grid-columns) {
+  @for $i from 1 through $columns {
+    .col#{$screen}pull-#{$i} {
+      right: -(percentage(($i / $columns)));
+    }
+  }
+}
+
+// Columns push
+//
+@mixin make-grid-push($screen: '-', $columns: $grid-columns) {
+  @for $i from 1 through $columns {
+    .col#{$screen}push-#{$i} {
+      left: percentage(($i / $columns));
+    }
+  }
+}
+
+// Columns offset
+//
+@mixin make-grid-offset($screen: '-', $columns: $grid-columns) {
+  @for $i from 1 through $columns {
+    .col#{$screen}offset-#{$i} {
+      margin-left: percentage(($i / $columns));
+    }
+  }
+}

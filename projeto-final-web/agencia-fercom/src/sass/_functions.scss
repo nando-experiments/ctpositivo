@@ -14,7 +14,7 @@
   @return $number;
 }
 
-@function em($pixels, $context: $base-font-size) {
+@function em($pixels, $context: $font-size-base) {
   @if (unitless($pixels)) {
     $pixels: $pixels * 1px;
   }

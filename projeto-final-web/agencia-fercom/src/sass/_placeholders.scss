@@ -12,3 +12,27 @@
     clear: both;
   }
 }
+
+//
+// Columns
+//
+
+%column {
+  float: left;
+  position: relative;
+  width: 100%;
+  padding: {
+    left:  em($grid-spacing);
+    right: em($grid-spacing);
+  };
+}
+
+// Creates a wrapper for a series of columns
+%make-row {
+  @extend %clearfix;
+
+  margin: {
+    left:  em(ceil(($grid-gutter-width / -2)));
+    right: em(floor(($grid-gutter-width / -2)));
+  };
+}

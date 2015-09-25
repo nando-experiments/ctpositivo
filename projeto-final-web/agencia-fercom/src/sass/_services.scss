@@ -1,0 +1,25 @@
+//
+//
+
+.services {
+  @extend %clearfix;
+  margin-bottom: em($grid-gutter-width);
+  padding: {
+    top: em($grid-gutter-width);
+    bottom: em($grid-gutter-width);
+  };
+  background-color: $silver-color;
+
+  a {
+    padding: em($grid-gutter-width / 2);
+  }
+
+  a,
+  a:hover {
+    text-decoration: none;
+  }
+
+  h3 {
+    @include font-size(22px);
+  }
+}

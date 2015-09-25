@@ -16,3 +16,19 @@
 .p-fixed { position: fixed !important; }
 .p-relative { position: relative !important; }
 .p-absolute { position: absolute !important; }
+
+.d-block { display: block !important; }
+.d-inline-block, .show { display: inline-block !important; }
+.d-inline { display: inline !important; }
+.d-none, .hidden { display: none !important; }
+
+hr.divider {
+  display: block;
+  margin: 2.3em auto;
+  border-color: $primary-color;
+  border-width: 2px;
+  width: 70px;
+}
+
+.dot { @include border-radius(50%); }
+.rounded { @include border-radius(4px); }

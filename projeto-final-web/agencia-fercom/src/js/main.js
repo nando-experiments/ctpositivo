@@ -1,6 +1,5 @@
 
 //= include ../bower/jquery/dist/jquery.min.js
-
 //= include ../bower/wow/dist/wow.min.js
 
 wow = new WOW({
