@@ -4,11 +4,12 @@
 .services {
   @extend %clearfix;
   margin-bottom: em($grid-gutter-width);
+  position: relative;
+  overflow: hidden;
   padding: {
     top: em($grid-gutter-width);
     bottom: em($grid-gutter-width);
   };
-  background-color: $silver-color;
 
   a {
     padding: em($grid-gutter-width / 2);

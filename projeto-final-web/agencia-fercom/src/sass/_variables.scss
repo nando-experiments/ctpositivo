@@ -6,8 +6,11 @@ $primary-color: #F06F52 !default;
 $black-color: #000 !default;
 $silver-color: #eee !default;
 $white-color: #fff !default;
+$txt-color: rgba($black-color, .75) !default;
+$border-color: darken($silver-color, 10%) !default;
 
-$family-base: 'Open Sans', Helvetica, Arial, sans-serif !default;
+// $family-base: 'Open Sans', Helvetica, Arial, sans-serif !default;
+$family-base: 'Droid Sans', Helvetica, Arial, sans-serif !default;
 $family-serif: 'Droid Serif', Georgia, serif !default;
 
 $font-size-base: 18px !default;

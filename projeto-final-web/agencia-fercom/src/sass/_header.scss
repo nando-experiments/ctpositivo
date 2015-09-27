@@ -6,10 +6,15 @@ $nav-width: 240px !default;
 .header {
   position: absolute;
   z-index: 1000;
+  min-height: 70px;
   width: 100%;
   right: 0;
   left: 0;
   top: 0;
+
+  &.p-fixed {
+    background: rgba($black-color, .9);
+  }
 
   @include media($screen-desktop) {
     padding: {
@@ -36,8 +41,8 @@ $nav-width: 240px !default;
 .logo {
   @include font-size($font-size-base + 12);
   font-family: $family-base;
-  font-weight: $font-weight-light;
-  letter-spacing: -0.06em;
+  font-weight: $font-weight-bold;
+  letter-spacing: -.1em;
   margin: $grid-gutter-width 0 0 $grid-gutter-width;
   padding: 0;
 
@@ -94,13 +99,13 @@ $nav-width: 240px !default;
 
   ul {
     list-style: none;
-    padding: 60px 0 0;
+    padding: em(60px) 0 0;
     margin: 2em 0 0;
     text-align: center;
 
     @include media($screen-desktop) {
       padding: 0;
-      margin: 1.4em 0 0;
+      margin: 1em 0 0;
       float: right;
       text-align: left;
     }

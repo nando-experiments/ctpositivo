@@ -2,7 +2,6 @@
 // Banner
 //
 
-
 .banner {
   background: url("/assets/images/banner.jpg") no-repeat top center;
   @include background-size(cover);
@@ -41,6 +40,10 @@
     display: none;
 
     @include media($screen-desktop) {
+      color: rgba($silver-color, .7);
+      width: 80%;
+      margin-left: auto;
+      margin-right: auto;
       display: block;
     }
   }

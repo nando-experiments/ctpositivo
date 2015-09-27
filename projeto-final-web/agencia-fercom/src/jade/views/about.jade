@@ -1,0 +1,33 @@
+// #about
+
+section#about.p-y-lg.clearfix
+  .container
+    .col-tablet-6.wow.fadeIn(data-wow-duration='1s', data-wow-delay='.3s')
+      h2.fw-light.m-y-0 Sobre nós
+      p.lead.txt-primary.fw-bold Lorem ipsum dolor sit amet, consectetuer elit.
+      p Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim.
+      p Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Aenean commodo ligula eget dolor.
+      a.button(href='#') Fale conosco
+
+    .col-tablet-6.wow.fadeIn(data-wow-duration='1s', data-wow-delay='.5s')
+      #about-carousel.carousel.slide(data-ride='carousel')
+
+        ol.carousel-indicators
+          li.active(data-target='#about-carousel', data-slide-to='0')
+          li(data-target='#about-carousel', data-slide-to='1')
+          li(data-target='#about-carousel', data-slide-to='2')
+
+        .carousel-inner
+          .item.active
+            img(src='/assets/images/office/02.jpg', alt='')
+          .item
+            img(src='/assets/images/office/03.jpg', alt='')
+          .item
+            img(src='/assets/images/office/04.jpg', alt='')
+
+        a.left.carousel-control(href='#about-carousel', data-slide='prev')
+          span.icon.icon-prev
+        a.right.carousel-control(href='#about-carousel', data-slide='next')
+          span.icon.icon-next
+
+// END #about

@@ -1,0 +1,55 @@
+//
+//
+//
+
+$input-color-placeholder: lighten($txt-color, 20%);
+
+legend {}
+
+label {}
+
+.form-group {
+  @extend %clearfix;
+  margin-bottom: em($grid-gutter-width / 3);
+  position: relative;
+}
+
+.form-control {
+  display: block;
+  width: 100%;
+  padding: em($grid-gutter-width / 2);
+  @include font-size($font-size-base);
+  line-height: $line-height-base;
+  color: $txt-color;
+  background-color: $white-color;
+  background-image: none;
+  border: 1px solid $border-color;
+  @include transition(border-color ease-in-out .2s);
+
+  &::-ms-expand {
+    background-color: transparent;
+    border: 0;
+  }
+
+   &::placeholder {
+    color: $input-color-placeholder;
+    opacity: 1;
+  }
+
+  &:focus {
+    outline: none;
+    border-color: darken($border-color, 35%);
+
+    &::placeholder {
+      color: $txt-color;
+    }
+  }
+
+  &.rounded {
+    @include border-radius(32px);
+  }
+}
+
+textarea.form-control {
+  height: auto;
+}

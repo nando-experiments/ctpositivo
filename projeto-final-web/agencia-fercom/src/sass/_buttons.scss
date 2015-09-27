@@ -12,9 +12,8 @@
   background-image: none;
   font-weight: $font-weight-normal;
   display: inline-block;
-  padding: 12px 30px;
+  padding: em($grid-gutter-width / 2);
   margin-bottom: .6em;
-  @include border-radius(32px);
   @include transition(background-color .2s linear);
 
   &:hover,
@@ -39,6 +38,14 @@
       background-color: rgba($white-color, .1);
     }
   }
+
+  &.rounded {
+    @include border-radius(32px);
+  }
+
+  &.d-block {
+    width: 100%;
+  }
 }
 
 .button-mediun {
@@ -49,4 +56,9 @@
 .button-small {
   padding: 4px 15px;
   @include font-size($font-size-base - 3);
+}
+
+.button-big {
+  padding: 15px 35px;
+  @include font-size($font-size-base + 2);
 }

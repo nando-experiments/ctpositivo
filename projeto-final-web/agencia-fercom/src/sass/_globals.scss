@@ -1,8 +1,8 @@
 
 // Google webfonts
 //
-@import url(https://fonts.googleapis.com/css?family=Open+Sans:400,300,700);
-// @import url(//fonts.googleapis.com/css?family=Droid+Sans:400,700);
+// @import url(//fonts.googleapis.com/css?family=Open+Sans:400,300,700);
+@import url(//fonts.googleapis.com/css?family=Droid+Sans:400,700);
 @import url(//fonts.googleapis.com/css?family=Droid+Serif:400,700);
 
 *,
@@ -20,7 +20,7 @@ body {
   font-family: $family-base;
   font-size: $font-size-base;
   line-height: $line-height-base;
-  color: rgba($black-color, .75);
+  color: $txt-color;
 }
 
 p {
@@ -28,11 +28,8 @@ p {
 }
 
 .lead {
-  width: 80%;
-  margin-left: auto;
-  margin-right: auto;
   @include font-size($font-size-base + 3);
-  color: rgba($silver-color, .7);
+  color: rgba($black-color, .7);
 }
 
 h1, .h1
@@ -91,4 +88,14 @@ figure {
 
 figcaption {
   @include font-size($font-size-base - 3);
+}
+
+@import "compass/utilities/sprites";
+@import "i/*.png";
+$i-sprite-dimensions: true;
+@include all-i-sprites;
+
+.i-sprite {
+  display: inline-block;
+  text-indent: -9999px;
 }
